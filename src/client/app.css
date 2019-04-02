@@ -6,3 +6,7 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.app-root {
+  margin: 20px;
+}

@@ -1,0 +1,10 @@
+.box-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.box-content {
+    margin-top: 15px;
+}
