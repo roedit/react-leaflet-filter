@@ -1,5 +1,5 @@
-# react-mapbox
-- [react-mapbox](#react-mapbox)
+# react-leaflet-filter
+- [react-leaflet-filter](#react-leaflet-filter)
   - [Introduction](#introduction)
   - [Quick Start](#quick-start)
   - [Documentation](#documentation)
