@@ -39,7 +39,7 @@ class App extends Component {
 
           <Grid item lg={6} xs={6}>
             <Box title="Ramps per construction material">
-              <Material></Material>
+              
             </Box>
           </Grid>
 

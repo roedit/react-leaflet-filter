@@ -5,6 +5,7 @@ import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { coordinatesUpdated } from '../../actions/FilterActions';
 
 class RampsMap extends React.Component {
+    //TODO: On init getBounds and filter data
     render() {
         const { data, position, zoom, coordinatesUpdated } = this.props;
 
