@@ -1,5 +1,6 @@
-export const updateZoom = () => {
+export const coordinatesUpdated = (payload) => {
   return {
-      type: 'ZOOM_UPDATED'
+      type: 'COORDINATES_UPDATED',
+      payload: payload
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "react-mapbox",
+  "name": "react-leaflet-filter",
   "version": "1.0.0",
-  "description": "List filtering using React, Redux, Material-ui, React-map-gl, Node.js, Express and Webpack.",
+  "description": "List filtering using React, Redux, Material-ui, React-leaflet, Node.js, Express and Webpack.",
   "main": "src/server/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -17,9 +17,11 @@
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
     "immutable": "^4.0.0-rc.12",
+    "leaflet": "^1.4.0",
     "lodash": "^4.17.11",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-leaflet": "^2.2.1",
     "react-redux": "^6.0.1",
     "recharts": "^1.5.0",
     "redux": "^4.0.1"

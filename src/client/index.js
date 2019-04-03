@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import FiltersReducer from './reducers/FiltersReducer';
+import MapReducer from './reducers/MapReducer';
 
-const store = createStore(FiltersReducer);
+const rootReducer = combineReducers({
+    map: MapReducer,
+    filters: FiltersReducer
+})
+const store = createStore(rootReducer);
 
 ReactDOM.render(
 <Provider store={store}>

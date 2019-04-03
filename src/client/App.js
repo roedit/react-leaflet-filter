@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import './app.css';
+import { connect } from 'react-redux';
 import Grid from '@material-ui/core/Grid'
-import Map from './components/map/Map';
+import RampsMap from './components/ramps-map/RampsMap';
 import Box from './components/box/Box';
 import Material from './components/material/Material';
 import Size from './components/size/Size';
+import { initData } from './actions/MapActions';
 
-export default class App extends Component {
+class App extends Component {
   state = { username: null };
 
   componentDidMount() {
     fetch('/api/getUsername')
       .then(res => res.json())
       .then(user => this.setState({ username: user.username }));
+
     fetch('/api/getData')
       .then(res => res.json())
-      .then(data => console.log(data));
+      .then(data => {
+        this.props.initData(data);
+        console.log('Data initialized')
+      });
   }
 
   render() {
@@ -27,7 +33,7 @@ export default class App extends Component {
         <Grid container spacing={16}>
           <Grid item lg={12} xs={12}>
             <Box title="Map">
-              <Map></Map>
+              <RampsMap></RampsMap>
             </Box>
           </Grid>
 
@@ -47,3 +53,8 @@ export default class App extends Component {
     );
   }
 }
+
+const mapDispatchToProps = {
+  initData: initData
+}
+export default connect(null, mapDispatchToProps)(App);

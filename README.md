@@ -12,7 +12,7 @@ This project was built with [simple-react-full-stack](https://github.com/crsande
 
 This is a simple [React](https://reactjs.org/) application with a [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/) backend. 
 The UI it's using [Material-ui](https://material-ui.com/), grafs are displayed using [Recharts](http://recharts.org/en-US/) and [Redux](https://redux.js.org/introduction/getting-started) for the state management.
-Map it's displayed using [React-map-gl](https://github.com/uber/react-map-gl).
+Map it's displayed using [React-Leaflet](https://react-leaflet.js.org/).
 The application is configured with [Airbnb's ESLint rules](https://github.com/airbnb/javascript) and formatted through [prettier](https://prettier.io/).
 
 ## Quick Start
