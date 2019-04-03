@@ -19,10 +19,10 @@ The application is configured with [Airbnb's ESLint rules](https://github.com/ai
 
 ```bash
 # Clone the repository
-git clone https://github.com/roedit/react-mapbox
+git clone https://github.com/roedit/react-leaflet-filter
 
 # Go inside the directory
-cd react-mapbox
+cd react-leaflet-filter
 
 # Install dependencies
 yarn (or npm install)
