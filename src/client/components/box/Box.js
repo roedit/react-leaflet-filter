@@ -6,7 +6,7 @@ function Box({ title, children }) {
     return(
         <Paper>
             <div className="box-title">
-                <Typography variant="overline" component="h1">{title}</Typography>
+                <Typography component="h1">{title}</Typography>
             </div>
             <div className="box-content">
                 {children}

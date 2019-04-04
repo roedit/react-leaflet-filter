@@ -14,11 +14,11 @@ export default function(state = initialState, action) {
 
     switch (action.type) {
         case 'INIT_DATA': {
+            //TODO: calculate the central item and set the map position to it
             stateJS.data = action.payload;
-            
+
             return fromJS(stateJS);
         }
-
         default: 
         return fromJS(stateJS);
     }

@@ -6,6 +6,7 @@ import RampsMap from './components/ramps-map/RampsMap';
 import Box from './components/box/Box';
 import Material from './components/material/Material';
 import Size from './components/size/Size';
+import RampsModal from './components/ramps-modal/RampsModal';
 import { initData } from './actions/MapActions';
 
 class App extends Component {
@@ -20,7 +21,6 @@ class App extends Component {
       .then(res => res.json())
       .then(data => {
         this.props.initData(data);
-        console.log('Data initialized')
       });
   }
 
@@ -30,6 +30,7 @@ class App extends Component {
     return (
       <div className="app-root">
         {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
+        <RampsModal />
         <Grid container spacing={16}>
           <Grid item lg={12} xs={12}>
             <Box title="Map">
@@ -39,7 +40,7 @@ class App extends Component {
 
           <Grid item lg={6} xs={6}>
             <Box title="Ramps per construction material">
-              
+              <Material></Material>
             </Box>
           </Grid>
 

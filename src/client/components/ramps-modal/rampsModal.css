@@ -1,0 +1,8 @@
+.modal-content {
+    width: 600px;
+    height: 600px;
+}
+
+.modal-content .leaflet-container {
+    height: 600px;
+}
